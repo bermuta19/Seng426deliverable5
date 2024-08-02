@@ -1,17 +1,8 @@
-# Cryptonite Final Version (not cryptonight ;) )
+# Cryptonite Final Version
 
-## New Feature: 
-   As an admin I want to delete a resource at admin panel so that I can remove unnecessary/oudated files.
-## What files did I change to implement this feature?
-### Frondend
-   I have modified these files: (1. service/file.service.ts, 2. resources/resources.component.html, 3. resources/resources.component.ts)
-### Backend
-   I have modified these files: (1. services/FileService.java (added deleteFile() method), 2. repositories/FileRepository.java, 3. api/v1/FileController.java)
-## Bug Fix:
-   I have fixed the role change bug.
-## What files did I modify to fix this bug?
-### Frontend Only: 
-   I did change the attribute value's value to Capital format by adjusting the getRoles() for both displayName and value in all three componenents.ts  and changed the [value]='role.value'> of components.html files at (admin/components/ 1.new-accounts/, 2.staff-accounts/, 3.user.accounts/). 
+## Security fixes
+   * sonarqube fix removed the database seeders from crypto-back located "src/main/java/io/uranus/ucrypt/data/seeders/DatabaseSeeder.java"
+   * zap fix
 
 ## To run the application: 
    * You need to have Docker Desktop and MySQL Server
